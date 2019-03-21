@@ -7,15 +7,13 @@ import { Todo } from './Todo'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  todos: Todo[] = [
-    { todo: 'タイトル', id: 1, completed: false }
-  ]
+  todos: Todo[] = []
   value: string = ''
 
   addTodo({ todo }) {
     this.todos = this.todos.concat([{
       todo,
-      id: this.todos[this.todos.length - 1].id + 1,
+      id: this.todos.length + 1,
       completed: false
     }])
   }

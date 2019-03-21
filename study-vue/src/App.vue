@@ -13,9 +13,7 @@ export default {
   components: { AddTodoForm, TodoList },
   data() {
     return {
-      todos: [
-        { id: 1, todo: 'タイトル', completed: false }
-      ]
+      todos: []
     }
   },
   methods: {

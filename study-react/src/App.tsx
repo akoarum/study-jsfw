@@ -15,13 +15,7 @@ interface State {
 
 class App extends Component {
   public state: State = {
-    todos: [
-      {
-        title: 'タイトル',
-        id: 1,
-        completed: false
-      }
-    ],
+    todos: [],
     value: ''
   }
 
@@ -40,7 +34,7 @@ class App extends Component {
     this.setState({
       todos: this.state.todos.concat([{
         title: this.state.value,
-        id: this.state.todos[this.state.todos.length - 1].id + 1,
+        id: this.state.todos.length + 1,
         completed: false
       }])
     })

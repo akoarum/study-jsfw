@@ -1,0 +1,6 @@
+<li class="todo">
+  <div class="id">ID: {{ todo.id }}</div>
+  <div class="title">{{ todo.todo }}</div>
+  <button type="button" class="btn" (click)="onClick(todo)">更新</button>
+  <i *ngIf="todo.completed" class="completed">完了</i>
+</li>

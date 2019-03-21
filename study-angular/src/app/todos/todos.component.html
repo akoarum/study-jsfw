@@ -1,0 +1,3 @@
+<ul class="todos">
+  <app-todo *ngFor="let todo of todos" [todo]="todo" (updateTodo)="_toggleTodo($event)"></app-todo>
+</ul>
